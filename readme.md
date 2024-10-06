@@ -29,6 +29,12 @@ git clone https://github.com/amprod2000/GitHub-Cert-Learning.git
 cd GitHub-Cert-Learning
 ```
 
+Generate a Personal Access Token (PAT)
+https://github.com/settings/personal-access-tokens
+
+Use the PAT as the password when you login
+- Give access to contents for Commits
+
 ### SSH
 
 ### GitHub CLI
