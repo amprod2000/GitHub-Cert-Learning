@@ -36,9 +36,32 @@ Use the PAT as the password when you login
 - Give access to contents for Commits
 
 ### SSH
+Create the SSH Keys IF they do not exist, type enter three times.
+```
+cd ~/.ssh
+ssh-keygen -b 4096 -t rsa
+```
+
+Save the public key to GitHub, login into GitHub and go to <b>settings</b> and open the tab <b>SSH and GFG Keys</b>. Paste the public key and give it a good name then click <b>New SSH Key</b>.
+```
+cat ~/.ssh/id_rsa.pub
+```
+Try this command now!!!
+```ssh
+git clone git@github.com:amprod2000/GitHub-Cert-Learning.git
+cd GitHub-Cert-Learning
+```
 
 ### GitHub CLI
+Login
+```
+gh auth login
+```
 
+Clone
+```
+gh repo clone amprod2000/GitHub-Cert-Learning
+```
 ## Commits
 To commit 
 ```sh
