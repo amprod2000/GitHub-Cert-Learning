@@ -76,6 +76,20 @@ To commit with messahe and without opening an editor
 git commit -m "MESSAGE HERE ABOUT NEW CHANGE"
 ```
 ## Branches
+List branches
+```
+git branch
+```
+
+To create a new branch
+```
+git branch NAME
+```
+
+Checkout the branch
+```
+git checkout dev
+```
 
 ## Remotes
 
