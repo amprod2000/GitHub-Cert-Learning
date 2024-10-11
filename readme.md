@@ -80,88 +80,102 @@ Git does not store the whole files in each commit but stores the state of change
 </div><br>
 
 ### Common Git Commands you should know!
-Files to be staged
-```sh
-git add FILE_NAME
-```
-
-Adds all files from current directory & subdirectory.
-```sh
-git add .
-```
-
-Remove a specific file
-```sh
-git rm FILE_NAME
-```
-
-To commit changes and opens the default editor to add a message.
-```sh
-git commit
-```
-
-To commits staged changes with a message without opening an editor
-```sh
-git commit -m "WRITE A GOOD COMMIT MESSAGE!!!"
-```
-
-Automatically stages all tracked, modified files before the commit
-```sh
-git commit -a -m "WRITE A GOOD COMMIT MESSAGE!!!"
-```
-
-Modifies the most recent commit
-```sh
-git commit --amend
-```
-
-Creates an empty commit, useful as a placeholder
-```sh
-git commit -m "Initial commit" --allow-empty
-```
-
-Commits with a specified author
-```sh
-git commit -m "WRITE A GOOD COMMIT MESSAGE!!!" --author="Author Name <email@example.com>"
-```
-
-Checkout to a specific commit based on SHA hash
-```sh
-git checkout/switch 2840504c6e5315a2209797c55f6f042f5434d87f
-```
-
-Set the global editor
-```sh
-git config --global core.editor EDITOR_NAME
-```
+| Syntax | Description |
+| ----------- | ----------- |
+| `git add FILE_NAME` | Files to be staged |
+| `git add .` | Adds all files from current directory & subdirectory. |
+| `git rm FILE_NAME` | Remove a specific file |
+| `git commit` | To commit changes and opens the default editor to add a message. |
+| `git commit -m "WRITE A GOOD COMMIT MESSAGE!!!"` | To commits staged changes with a message without opening an editor |
+| `git commit -a -m "WRITE A GOOD COMMIT MESSAGE!!!"` | Automatically stages all tracked, modified files before the commit |
+| `git commit --amend` | Modifies the most recent commit |
+| `git commit -m "Initial commit" --allow-empty` | Creates an empty commit, useful as a placeholder |
+| `git commit -m "WRITE A GOOD COMMIT MESSAGE!!!" --author="Author Name <email@example.com>"` | Commits with a specified author |
+| `git checkout/switch 2840504c6e5315a2209797c55f6f042f5434d87f` | Checkout to a specific commit based on SHA hash |
+| `git config --global core.editor EDITOR_NAME` | Set the global editor |
 
 ## Branches
 Branches are copies of a point in time that have been modified to be different.
 
 All repositories start with the <b>main branch</b>.
 
-List branches
-```
-git branch
-```
+Create branches for
+* <b>Specific environments</b>: Staging, Development, Production
+* <b>Specific to developers</b>: andrew, bayko, cindy
+* <b>Per feature</b>: payment-gateway-feature
+* <b>Per bug</b>: hotfix-blank-homepage
 
-To create a new branch
-```
-git branch NAME
-```
+| Syntax | Description |
+| ----------- | ----------- |
+| `git branch` | List all local branches |
+| `git branch NAME` | Creates a new branch |
+| `git checkout/switch BRANCH_NAME` | Checkout (Switch to) a branch |
+| `git checkout/switch -b BRANCH_NAME` | Creates and checkout (Switch to ) a branch |
+| `git branch -d BRANCH_NAME` | Delete a branch |
+| `git branch -m OLD_BRANCH_NAME NEW_BRANCH_NAME` | Rename a branch |
+| `git branch -a` | Lists both remote and local branches |
 
-Checkout the branch
-```
-git checkout dev
-```
+A <b>common workflow</b> for developers is to create a branch or a feature, and they need to push their branch upstream to the remote name origin.
+```sh
+# Creates and checkout (Switch to ) a branch.
+git checkout -b BRANCH_NAME
 
-To switch to different branches use ```switch``` or ```checkout```.
-```
-git checkout BRANCH_NAME
-git switch BRANCH_NAME
+# Developer makes changes to files.
+
+# Adds all files from current directory & subdirectory.
+git add .
+
+# To commits staged changes with a message without opening an editor.
+git commit -m "WRITE A GOOD COMMIT MESSAGE!!!"
+
+# ...
+git push -u origin BRANCH_NAME
 ```
 
 ## Remotes
+* A git <b>remote</b> represents the reference to remote location where a copy of the repository is hosted.
+* You can have multiple remote entries for your git repo.
+* The most common is called `origin` as a remote name, it indicates the central or golden repo everyone is working from and represents the source of truth.
+
+### The remote entries are stored in `.git/config`
+```sh
+[core] repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[remote "origin"]
+        url = git@github.com:amprod2000/GitHub-Cert-Learning.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+        remote = origin
+        merge = refs/heads/main
+        vscode-merge-base = origin/main
+[remote "upstream"]
+        url = git@github.com:CODE33301/GitHub-Cert-Learning.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+        gh-resolved = base
+[branch "dev"]
+        vscode-merge-base = origin/main
+        remote = origin
+        merge = refs/heads/dev
+```
+
+### Common Git Remote Commands you should know!
+| Syntax | Description |
+| ----------- | ----------- |
+| `git remote -v` | Lists all remote repositories along with their URLs. |
+| `git remote add NAME URL` | ... |
+| `git remote remove NAME` | ... |
+| `git remote rename OLD_NAME NEW_NAME` | ... |
+| `git push REMOTE_NAME BRANCH_NAME` | Pushes a branch and it's commits to the specific remote |
+| `git pull REMOTE_NAME BRANCH_NAME` | Pulls updates from a remote branch |
+| `git fetch REMOTE_NAME` | Fetch updates without pulling |
+
+### Upstream & Downstream
+| Key Term | Description |
+| ----------- | ----------- |
+| Downstream | A repository that pulls or clones from another repository. <b>Pull</b>ing is downstream |
+| Upstream | The repository to which we push changes. <b>Push</b> is upstream. |
 
 ## Stashing
 
@@ -224,3 +238,6 @@ To push a repo to our remote origin
 ```
 git push
 ```
+
+## Flow
+Github Flow is a <b>light-weight workflow</b> for multiple developers working on a single repository.
