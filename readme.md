@@ -53,15 +53,56 @@ cd GitHub-Cert-Learning
 ```
 
 ### GitHub CLI
-Login
-```
-gh auth login
-```
+The GitHub CLI is a command Line Interface to interact with your GitHub Account. You can quickly perform common GitHub actions without leaving your developer environment.
 
-Clone
-```
-gh repo clone amprod2000/GitHub-Cert-Learning
-```
+| Syntax | Description |
+| ----------- | ----------- |
+| `brew install gh` | The GitHub CLI can be installed on <b>Windows, Linux, and macOS</b>. |
+| <div style="color:#990000; background:#D9D9D9; padding-left:5px; border:1px; border-radius: 5px; font-size: 15px; font-family: 'Noto Sans'"> "features": {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"ghcr.io/devcontainers/features/github-cli:1": {}<br>} </div> | The GitHub CLI can be installed for GitHub Codespaces via Features. |
+| `gh auth login` | Login |
+| `gh repo clone amprod2000/GitHub-Cert-Learning` | Clone |
+| `gh repo create github-examples --public` | Create a repo |
+| `gh issue create --title "Issue title" --body "Issue body"` | Create an issue |
+| `gh pr review --comment -b "Interesting"` | Reviewing a PR |
+
+### Core Commands
+| Commands | Description |
+| ----------- | ----------- |
+| `gh auth` | ... |
+| `gh browse` | ... |
+| `gh codespace` | ... |
+| `gh gist` | ... |
+| `gh issue` | ... |
+| `gh org` | ... |
+| `gh pr` | ... |
+| `gh project` | ... |
+| `gh release` | ... |
+| `gh repo` | ... |
+
+### Additional Commands
+| Commands | Description |
+| ----------- | ----------- |
+| `gh alias` | ... |
+| `gh api` | ... |
+| `gh completion` | ... |
+| `gh config` | ... |
+| `gh extension` | ... |
+| `gh gpg-key` | ... |
+| `gh lable` | ... |
+| `gh ruleset` | ... |
+| `gh search` | ... |
+| `gh secret` | ... |
+| `gh ssh-key` | ... |
+| `gh status` | ... |
+| `gh variable` | ... |
+
+GitHub Actions Commands
+| Commands | Description |
+| ----------- | ----------- |
+| `gh cache` | ... |
+| `gh run` | ... |
+| `gh workflow` | ... |
+
 ## Commits
 A Git commit represent incremental changes to a codebase represented with a git tree (graph) at a specific time.
 
@@ -241,3 +282,9 @@ git push
 
 ## Flow
 Github Flow is a <b>light-weight workflow</b> for multiple developers working on a single repository.
+* <b>Create a branch</b>: for each new task or feature. create a new branch off the main branch.
+* <b>Add Commits</b>: Make changes and commit them to your branch.
+* <b>Open a Pull Request</b>: Start a discussion about your commits, reviewing code in the pull request.
+* <b>Discuss and Review</b>: Share your pull request with teammates for feedback.
+* <b>Deploy</b>: Test your changes in a production environment.
+* <b>Merge</b>: Once your changes are verified, merge them into the main branch.
