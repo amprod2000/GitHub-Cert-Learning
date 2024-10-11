@@ -91,6 +91,12 @@ Checkout the branch
 git checkout dev
 ```
 
+To switch to different branches use <b>switch</b> or <b>checkout</b>.
+```
+git checkout BRANCH_NAME
+git switch BRANCH_NAME
+```
+
 ## Remotes
 
 ## Stacking
