@@ -76,7 +76,22 @@ To commit with messahe and without opening an editor
 git commit -m "MESSAGE HERE ABOUT NEW CHANGE"
 ```
 ## Branches
-To switch to different branches use <b>switch</b> or <b>checkout</b>.
+List branches
+```
+git branch
+```
+
+To create a new branch
+```
+git branch NAME
+```
+
+Checkout the branch
+```
+git checkout dev
+```
+
+To switch to different branches use ```switch``` or ```checkout```.
 ```
 git checkout BRANCH_NAME
 git switch BRANCH_NAME
@@ -84,9 +99,22 @@ git switch BRANCH_NAME
 
 ## Remotes
 
-## Stacking
+## Stashing
+
+```
+git stash list
+git stash
+git stash save STASH_NAME
+git stash apply
+git stach pop
+```
 
 ## Merging
+If you want to merge the <b>dev branch</b> to the <b>main branch</b>, you need to be in dev first for example, ...
+```
+git switch/checkout dev
+git merge main
+```
 
 ## Add
 To stage changes that will be included in the commit, the ```.``` adds all possible files.
