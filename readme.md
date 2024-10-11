@@ -76,6 +76,11 @@ To commit with messahe and without opening an editor
 git commit -m "MESSAGE HERE ABOUT NEW CHANGE"
 ```
 ## Branches
+To switch to different branches use <b>switch</b> or <b>checkout</b>.
+```
+git checkout BRANCH_NAME
+git switch BRANCH_NAME
+```
 
 ## Remotes
 
