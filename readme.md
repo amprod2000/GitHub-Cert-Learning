@@ -63,18 +63,48 @@ Clone
 gh repo clone amprod2000/GitHub-Cert-Learning
 ```
 ## Commits
-To commit 
+A Git commit represent incremental changes to a codebase represented with a git tree (graph) at a specific time.
+
+A git commit contains
+* Additions, <b>modifications</b>, and deletions of files.
+* Additions and deletions of file contents.
+* <b>Hash</b>: A unique SHA-1 hash identifier for each commit that acts as an ID, for example ```2840504c6e5315a2209797c55f6f042f5434d87f```.
+* <b>Auther information</b>: The name and email of the person who made the commit.
+* <b>Message</b>: A Description of what changes the commit contains. <b>Write good commit messages!</b>
+* <b>Timestamp</b>: The date and time when the commit was made.
+* <b>Parent Commit Hash(es)</b>: 
+* <b>Snapshot of Content</b>: A snapshot of the project at the time of the commit not the files, but reference to them.
+
+<div style="color:#000000; background:#FFD1B3; padding-left:5px; border:1px; border-style: solid; border-color: #FF6600; border-radius: 5px;">
+Git does not store the whole files in each commit but stores the state of changes. This reduces the file size. To the developer the files will appear in full.
+</div><br>
+
+Files to be staged
+```sh
+git add FILE_NAME
+
+# Adds all files from current directory & subdirectory.
+git add .
+
+# Remove a specific file from staged Changes
+rm FILE_NAME
+git rm FILE_NAME
+```
+
+To commit changes and opens the default editor to add a message.
 ```sh
 git commit
 ```
-Set the global editor
-```
-git config --global core.editor EDITOR_NAME
-```
-To commit with messahe and without opening an editor
+To commit changes with message and without opening an editor
 ```sh
 git commit -m "MESSAGE HERE ABOUT NEW CHANGE"
 ```
+
+Set the global editor
+```sh
+git config --global core.editor EDITOR_NAME
+```
+
 ## Branches
 List branches
 ```
