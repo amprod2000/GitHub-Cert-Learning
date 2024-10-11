@@ -79,15 +79,19 @@ A git commit contains
 Git does not store the whole files in each commit but stores the state of changes. This reduces the file size. To the developer the files will appear in full.
 </div><br>
 
+### Common Git Commands you should know!
 Files to be staged
 ```sh
 git add FILE_NAME
+```
 
-# Adds all files from current directory & subdirectory.
+Adds all files from current directory & subdirectory.
+```sh
 git add .
+```
 
-# Remove a specific file from staged Changes
-rm FILE_NAME
+Remove a specific file
+```sh
 git rm FILE_NAME
 ```
 
@@ -95,9 +99,35 @@ To commit changes and opens the default editor to add a message.
 ```sh
 git commit
 ```
-To commit changes with message and without opening an editor
+
+To commits staged changes with a message without opening an editor
 ```sh
-git commit -m "MESSAGE HERE ABOUT NEW CHANGE"
+git commit -m "WRITE A GOOD COMMIT MESSAGE!!!"
+```
+
+Automatically stages all tracked, modified files before the commit
+```sh
+git commit -a -m "WRITE A GOOD COMMIT MESSAGE!!!"
+```
+
+Modifies the most recent commit
+```sh
+git commit --amend
+```
+
+Creates an empty commit, useful as a placeholder
+```sh
+git commit -m "Initial commit" --allow-empty
+```
+
+Commits with a specified author
+```sh
+git commit -m "WRITE A GOOD COMMIT MESSAGE!!!" --author="Author Name <email@example.com>"
+```
+
+Checkout to a specific commit based on SHA hash
+```sh
+git checkout/switch 2840504c6e5315a2209797c55f6f042f5434d87f
 ```
 
 Set the global editor
@@ -106,6 +136,10 @@ git config --global core.editor EDITOR_NAME
 ```
 
 ## Branches
+Branches are copies of a point in time that have been modified to be different.
+
+All repositories start with the <b>main branch</b>.
+
 List branches
 ```
 git branch
