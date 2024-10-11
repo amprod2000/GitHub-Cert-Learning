@@ -91,7 +91,7 @@ Checkout the branch
 git checkout dev
 ```
 
-To switch to different branches use <b>switch</b> or <b>checkout</b>.
+To switch to different branches use ```switch``` or ```checkout```.
 ```
 git checkout BRANCH_NAME
 git switch BRANCH_NAME
