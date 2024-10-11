@@ -102,6 +102,11 @@ git switch BRANCH_NAME
 ## Stacking
 
 ## Merging
+If you want to merge the <b>dev branch</b> to the <b>main branch</b>, you need to be in dev first for example, ...
+```
+git switch/checkout dev
+git merge main
+```
 
 ## Add
 To stage changes that will be included in the commit, the ```.``` adds all possible files.
