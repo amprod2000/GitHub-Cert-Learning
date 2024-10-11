@@ -99,7 +99,15 @@ git switch BRANCH_NAME
 
 ## Remotes
 
-## Stacking
+## Stashing
+
+```
+git stash list
+git stash
+git stash save STASH_NAME
+git stash apply
+git stach pop
+```
 
 ## Merging
 If you want to merge the <b>dev branch</b> to the <b>main branch</b>, you need to be in dev first for example, ...
