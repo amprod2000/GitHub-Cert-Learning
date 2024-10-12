@@ -79,6 +79,79 @@ git clone git@github.com:amprod2000/GitHub-Cert-Learning.git
 cd GitHub-Cert-Learning
 ```
 
+### Deploy Keys
+Deploy keys allows you to attach public keys directly to a Git Repo
+
+You can use keys to, ...
+* <b>Build server or CI/CD third-party</b> services that need to clone the repo so they perform a build or a deploy.
+* <b>Single Repo Access</b> so insted of using a shared key pair for multiple repos you have a single key pair for a single Git Repo.
+* Avoid using <b>Personal Account Access Tokens</b>
+
+### Personal Account Tokens (PAT)
+Are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line. 
+* Personal Access Tokens is found under <b>Developer Settings</b>.
+* When you clone a git repo using HTTPS you would use your personal access token to authorize the clone for example, `git clone https://github.com/amprod2000/GitHub-Cert-Learning.git`.
+* Insted of using gh login you could set the GH_TOKEN
+  * Check if `GH_TOKEN` is set, `env | grep --color GH_`
+  * Create an <b>Fine-grained Personal Access Token</b>, located in the Developer Settings under the <u><b>user settings</b></u>.
+  * Copy and past, where is says <b>MY_PERSONAL_ACCESS_TOKEN</b>, `export GH_TOKEN="MY_PERSONAL_ACCESS_TOKEN"`
+  * Check again of the `GH_TOKEN` is set `env | grep --color GH_`, if so. YAY!
+* When using GitHub SDKs you need to pass your PAT to authorize API calls, <div style="color:#990000; background:#D9D9D9; padding-left:5px; border:1px; border-radius: 5px; font-size: 15px; font-family: 'Noto Sans'"> require 'octokit' <br> octokit = Octokit::Client.new(access_token: 'YOUR-TOKEN') </div>
+
+GitHub has two types of PATS
+* <b>Classic tokens</b>
+  * They are no longer recommended for use.
+  * Customer's with legacy systems may be still using clasic token
+* <b>Fined-grained personal access tokens</b>
+  * Granted specific permissions
+  * Must have an expiry date
+  * Can only access specific repositories
+  * Can only access resources owned by a single use or organization
+
+### GitHub APIs
+GitHub has two APIs <b>REST API</b> and <b>GraphQL API</b>
+* To use the GraphQL API tool go to `https://docs.github.com/en/graphql/overview/explorer`
+
+#### REST API endpoints for issues
+List issues assigned to the authenticated user
+```
+curl -L \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR-TOKEN>" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  https://api.github.com/issues
+```
+
+### GitHub SDKs
+* Octokit are the offical SDKs to programmatically interact with the Git REST API
+* GitHub official maintains SDKs languages
+  * JavaScript / TypeScript
+  * C# / .NET
+  * Ruby
+  * Terraform provider, good for <b>repos</b> but not <b>issues</b>
+
+#### Initialize Terraform
+`terraform init`
+
+`terraform plan`
+
+`terraform apply --auto-approve`
+
+#### Fix Errors
+If you see this error message, make sure you have GH_TOKEN set it not generate it!!!
+```sh
+Planning failed. Terraform encountered an error while generating this plan.
+
+╷
+│ Error: Error
+│ 
+│   with provider["registry.terraform.io/integrations/github"],
+│   on main.tf line 11, in provider "github":
+│   11: provider "github" {}
+│ 
+│ GET https://api.github.com/user: 401 Bad credentials []
+```
+
 ### GitHub CLI
 The GitHub CLI is a command Line Interface to interact with your GitHub Account. You can quickly perform common GitHub actions without leaving your developer environment.
 
@@ -114,6 +187,17 @@ The GitHub CLI is a command Line Interface to interact with your GitHub Account.
 | `git remote add newrepo https://github.com/owner/repo` | Show more repository options in the interactive picker |
 | `gh repo create` | Create a repository interactively |
 | `gh repo delete REPOSITORY_NAME` | Delete a GitHub repository. |
+
+### Core Commands | gh auth
+| Commands | Description |
+| ----------- | ----------- |
+| `gh auth token` | This command outputs the authentication token for an account on a given GitHub host. |
+
+### Core Commands | gh issue
+| Commands | Description |
+| ----------- | ----------- |
+| `gh issue create --title "I found a bug" --body "Nothing works"` | Before you create issues, enable it. Go to the repo's <b>Settings</b>, on the right click <b>Features</b>, lastly click <b>Issues</b>. |
+| `Paragraph` | ... |
 
 ### Additional Commands
 | Commands | Description |
