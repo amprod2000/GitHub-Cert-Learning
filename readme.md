@@ -36,17 +36,44 @@ Use the PAT as the password when you login
 - Give access to contents for Commits
 
 ### SSH
-Create the SSH Keys IF they do not exist, type enter three times.
-```
+The common strategy for authenticathing to perform git operations on your remote GitHub repo is using SSH keys.
+
+SSH uses a public and private key to authorize remote access to servers. ssh-keygen in a well known command to generate a public and private key.
+#### To create the SSH Keys IF they do not exist, type enter three times.
+```sh
+# Switch Directory, To Store Them In A Different Directory.
 cd ~/.ssh
+
+# To Generate an RSA Key
 ssh-keygen -b 4096 -t rsa
+
+# To Generate an ED25519
+ssh-keygen -t ed25519
 ```
 
-Save the public key to GitHub, login into GitHub and go to <b>settings</b> and open the tab <b>SSH and GFG Keys</b>. Paste the public key and give it a good name then click <b>New SSH Key</b>.
-```
+A copy of the public and private key reside on the local computer and a copy of the that public key is stored on GitHub. 
+* To save the public key to GitHub, login into GitHub and go to <b>settings</b> and open the tab <b>SSH and GFG Keys</b>. Paste the public key and give it a good name and then click <b>New SSH Key</b>.
+* You can also add keys to a repo as well, <b><u>pick any repo</u></b>, click <b>settings</b>, one the left side of the screen, under <b><u>security</u></b> click <b>Deploy keys</b>, on the right side of the screen click <b>Add deploy key</b>. Paste the public key and give it a good <b>title</b> and then click <b>Add Key</b>.
+
+```sh
+# To Get The RSA Public Key
 cat ~/.ssh/id_rsa.pub
+
+# To Get The ED25519 Public Key
+cat ~/.ssh/id_ed25519.pub
 ```
-Try this command now!!!
+
+#### The process of authenticating and authorizing
+* The server check if you have the same public key
+* If you do, a challenge message is sent. It's an encrypted message with your public key.
+* Only a private key on the local computer will decrypt the message
+* Once decrypted the client signs the message also using the private key, it sends back a signature.
+* GitHub/server gets the signature, using the public key will verify the signature
+* A connection is established!!!
+
+It allows the user to use the SSH keys to get gone or to push.
+
+Then you can clone your repo using the <b>ssh style address</b>
 ```ssh
 git clone git@github.com:amprod2000/GitHub-Cert-Learning.git
 cd GitHub-Cert-Learning
@@ -79,6 +106,15 @@ The GitHub CLI is a command Line Interface to interact with your GitHub Account.
 | `gh release` | ... |
 | `gh repo` | ... |
 
+### Core Commands | gh repo
+| Commands | Description |
+| ----------- | ----------- |
+| `gh repo set-default` | Interactively select a default repository |
+| `gh repo set-default owner/repo` | Set a repository |
+| `git remote add newrepo https://github.com/owner/repo` | Show more repository options in the interactive picker |
+| `gh repo create` | Create a repository interactively |
+| `gh repo delete REPOSITORY_NAME` | Delete a GitHub repository. |
+
 ### Additional Commands
 | Commands | Description |
 | ----------- | ----------- |
@@ -88,7 +124,7 @@ The GitHub CLI is a command Line Interface to interact with your GitHub Account.
 | `gh config` | ... |
 | `gh extension` | ... |
 | `gh gpg-key` | ... |
-| `gh lable` | ... |
+| `gh label` | ... |
 | `gh ruleset` | ... |
 | `gh search` | ... |
 | `gh secret` | ... |
@@ -96,7 +132,17 @@ The GitHub CLI is a command Line Interface to interact with your GitHub Account.
 | `gh status` | ... |
 | `gh variable` | ... |
 
-GitHub Actions Commands
+### Additional Commands | gh label
+| Commands | Description |
+| ----------- | ----------- |
+| `gh label list` | Display labels in a GitHub repository |
+| `gh label create` | Create a new label on GitHub, or update an existing one with `--force`. |
+Create new danger label
+```sh
+gh label create danger --description "Something really not right" --color E99695
+```
+
+### GitHub Actions Commands
 | Commands | Description |
 | ----------- | ----------- |
 | `gh cache` | ... |
