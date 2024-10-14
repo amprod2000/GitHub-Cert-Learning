@@ -131,12 +131,24 @@ curl -L \
   * Terraform provider, good for <b>repos</b> but not <b>issues</b>
 
 #### Terraform
-Initialize Terraform<br>
+Makes sure you are inside the terraform folder and then you can initialize Terraform<br>
 `terraform init`
 
 `terraform plan`
 
 `terraform apply --auto-approve`
+
+`terraform destroy --auto-approve`
+
+#### Ruby
+Generate the Gemfile file<br>
+`bundle init`
+
+Install a package<br>
+`bundle install`
+
+Install the Octokit package<br>
+`gem install octokit`
 
 #### Fix Errors
 If you see this error message, make sure you have GH_TOKEN set it not generate it!!!
