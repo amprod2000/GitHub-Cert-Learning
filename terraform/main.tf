@@ -10,7 +10,7 @@ terraform {
 # Configure the GitHub Provider
 provider "github" {}
 
-data "github_branch" "development" {
+resource "github_branch" "development" {
   repository = "GitHub-Cert-Learning"
   branch     = "sdks"
 }
