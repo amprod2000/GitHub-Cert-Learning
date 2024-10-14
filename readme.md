@@ -130,7 +130,8 @@ curl -L \
   * Ruby
   * Terraform provider, good for <b>repos</b> but not <b>issues</b>
 
-#### Initialize Terraform
+#### Terraform
+Initialize Terraform<br>
 `terraform init`
 
 `terraform plan`
