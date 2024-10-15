@@ -150,6 +150,10 @@ Install a package<br>
 Install the Octokit package<br>
 `gem install octokit`
 
+#### Javascript
+Install Octokit<br>
+`npm i octokit`
+
 #### Fix Errors
 If you see this error message, make sure you have GH_TOKEN set it not generate it!!!
 ```sh
