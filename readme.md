@@ -5,14 +5,28 @@ Initialize an empty Git repository to a new project
 * First, create a new folder
 * Lasty, initalize the new repo
 
-```
+```sh
+# Create a folder
 mkdri new-projects
+
+# Go into the folder
 cd new-projects
+
+# Initialize an empty Git repository to a new project
 git init
+
+# Create readme.md MarkDown file
 touch readme.md
+
+# Open file in Visal Code
 code readme.md
+
+# Checks if there are mofified or new files
 git status
+
+# Add File to staged
 git add readme.md
+
 # Makes changes to readme.md
 git commit -m "add readme.md file"
 ```
@@ -181,6 +195,28 @@ The GitHub CLI is a command Line Interface to interact with your GitHub Account.
 | `gh repo create github-examples --public` | Create a repo |
 | `gh issue create --title "Issue title" --body "Issue body"` | Create an issue |
 | `gh pr review --comment -b "Interesting"` | Reviewing a PR |
+
+### GitHub Desktop
+GitHub Desktop is an application to interact with GitHub repos without the browser or via code. Git & GitHub operations can be performed via the GUI for an easy-to-use experiance.
+
+GitHub Desktop supports
+* macOS
+* Windows
+* Linux
+
+### GitHub Accounts
+* Personal
+* Organizational
+* Enterprise
+
+#### Personal
+Individul accounts with a username and profile, they can own resources like repositories and projects, and actions taken are attributed to the personal account. They can be either GitHub Free or GitHub Pro
+
+#### Organization
+Shared accounts where people collaborate on projects, They can also own resources like repositories but are managed throught individual personal accounts. Organizations offer different roles with verying levels of access and come with security features.
+
+#### Enterprise
+
 
 ### Core Commands
 | Commands | Description |
