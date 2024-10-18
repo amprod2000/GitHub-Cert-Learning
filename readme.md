@@ -204,19 +204,151 @@ GitHub Desktop supports
 * Windows
 * Linux
 
-### GitHub Accounts
-* Personal
-* Organizational
-* Enterprise
+<table>
+  <thead>
+    <tr>
+      <th colspan=3 style="text-align: center;"><h3>GitHub Accounts</h3></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Personal</td>
+      <td>
+        Individul accounts with a username and public profile, they can own resources like repositories and projects, and actions taken are attributed to the personal account. They can be either GitHub Free or GitHub Pro. You can also host your own public website.Repo URLs for personal accounts, http://github.com/USERNAME/REPO
+      </td>
+    </tr>
+    <tr>
+      <td>Organizational</td>
+      <td>
+        Public profile with a username, shared accounts where people collaborate on projects, They can also own resources like repositories but are managed throught individual personal accounts. Organizations offer different roles with verying levels of access and come with security features. It can show who belongs within the organization. To access a Organization repo, http://github.com/USERNAME/REPO
+      </td>
+    </tr>
+    <tr>
+      <td>Enterprise</td>
+      <td>
+        Part of GitHub Enterprise Cloud and Server, these accounts allow for central management of multiple organizations. They're geared towards larger steps needing centralized policy and billing management.
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-#### Personal
-Individul accounts with a username and profile, they can own resources like repositories and projects, and actions taken are attributed to the personal account. They can be either GitHub Free or GitHub Pro
+<table>
+  <thead>
+    <tr>
+      <th colspan=3 style="text-align: center;"><h3>GitHub Enterprise</h3></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cloud</td>
+      <td>
+        <ul>
+          <li>Hosted on GitHub.com</li>
+          <li>50,000 Mins GitHub Actions Per Month</li>
+          <li>50 GB GitHub Packages Storage Per Month</li>
+          <li>Option to Centrally Manage Policy, ...</li>
+          <li>Have a third special GitHub Repo called <b>Internal</b></li>
+            <ul>
+              <li>All enterprise members have <b>read permissions</b> to the internal repository.</li>
+              <li>Internal repositories are <b>not visible to people outside the enterprise</b>, including <b>outside collaborations on organization repositories</b>.</li>
+              <li>Unless your enterprise uses Enterprise Managed Users (EMUs), members of the enterprise can fork any internal repository owned by an organization in the enterprise.</li>
+              <li>Internal repositories are the <b>default setting</b> for all new repositories created in an organization owned by an enterprise account.</li>
+            </ul>
+          <li></li>
+        </ul>
+      </td>
+      <td rowspan=2>
+        <ul>
+          <li>Authentication with SAML Single Sign-on</li>
+          <li>Access Provisioning With SAML or SCIM</li>
+          <li></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Server</td>
+      <td>
+        <ul>
+          <li>Self-hosted</li>
+          <li></li>
+        </ul>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-#### Organization
-Shared accounts where people collaborate on projects, They can also own resources like repositories but are managed throught individual personal accounts. Organizations offer different roles with verying levels of access and come with security features.
+### Security Assertion Markup Language (SAML) and System for Cross-domain Identify Management (SCIM)
+> Only available for both GitHub Enterprise Cloud and GitHub Enterprise Server.
 
-#### Enterprise
+| Key Tem | Des |
+| --- | --- |
+| Security Assertion Markup Language (SAML) | Is about securely transmitting user authentication and authorization data for single sign-on purposes. |
+| System for Cross-domain Identify Management (SCIM) | Is about managing user identities across different systems to simplify account maintenance and provisioning. |
 
+> <b>Advanced Security</b><br>GitHub makes extra security features available to enterprise accounts under a GitHub Advanced Security (GHAS) license.<br><br><b>GitHub Enterprise Accounts</b><br>GitHub Enterprise Cloud (GHEC)<br>GitHub Enterprise Server (GHES)<br><br><b>GitHub Advanced Security (GHAS) License provides features</b><br>Code Scanning<br>Secret Scanning<br>Dependency Review
+
+### GitHub Free Vs GitHub Pro
+| GitHub Free | GitHub Pro |
+| ----------- | ----------- |
+| 500 MB GitHub Packages Storage | 2 GB GitHub Packages Storage |
+| 120 Hrs GitHub Codespaces Core Per Month | 180 Hrs GitHub Codespaces Core Per Month |
+| 15 GB GitHub Codespaces Storage Per Month | 20 GB GitHub Codespaces Storage Per Month |
+|  |  |
+
+### GitHub Organizations Plans
+GitHub Organizations has three plans, Free, Teams, and Enterprise.
+
+| Free | Teams | Enterprise |
+| ----------- | ----------- | ----------- |
+| 2,000 GitHub Actions Minutes Per Month | 3,000 GitHub Actions Minutes Per Month | |
+| 500 MB GitHub Packages Storage | 2 GB GitHub Packages Storage | |
+|  | Code Owners |  |
+|  | Draft Pull Requests |  |
+
+### Markdown
+A Markup language is a way of formatting and presenting text data in a different format. A common use-case for a markup language is to present date in <mark><b>HTML</b></mark>. Markdown is markup language that provides a shorthand syntax to format information into HTML. The markdown file extensions are <b>.md</b> and <b>.markdown</b>.
+
+| Type | Code |
+| --- | --- |
+| Headings | `# H1` <br>`## H2`<br>`### H3` |
+| Text Formatting | `*Code Ex*` *Italicized Example* <br>`**Code Ex**` **Bold Text Example** |
+| Blockquote | `> Code Ex` |
+| Unordered List | `- Code Ex` |
+| Ordered List | `1. Code Ex` |
+| Link | `[Title](URL)` [Tile](https://duckduckgo.com) |
+| Image | `![Alt Text](https://duckduckgo.com/favicon.ico)` ![Alt Text](https://duckduckgo.com/favicon.ico) |
+| Horizontal Rule | `---` |
+| Code Inline | Codeblocks use backticks and not single quotes. The backticks key is above the tab key on the keyboard. ` `` ` `Code Example` |
+| Table |  |
+| Fenced Code Blocks |  |
+| Footnote |  |
+| Task List |  |
+| Emoji |  |
+| Subscript |  |
+| Superscript |  |
+| Heading ID | `### My Heading Ex {#custom-id}` |
+| Definition List | |
+| Strikethrough | `~~Code Ex~~` ~~Strikethrough~~ |
+| Highlight | `==Code Ex==` |
+
+### GitHub Flavoured Markdown (GFM)
+The dialect of Markdown that is currently supported for user content on GitHub.com and GitHub Enterprise. [GitHub Flavoured Markdown Website](https://github.github.com/gfm)
+* Supports embedded syntax within tables
+* Supports advanced cell alignment
+* The `<details>` tag can be used to create collapsible sections
+* **Mermaid** is a Markdown-inspired tool that renders text into diagrams
+* **GeoJSON** or **TopoJSON** syntax to create interactive maps.
+* **ASCII STL** syntax directly in markdown to create interactive 3D models.
+* Can also render mathematical expressions via Latez formatted math, uses MathJax underneath as the tool to render. Use the $$ to denote start and end of latex or use the ``` match Fencing block.
+* Will also turn raw link automatically into a link.
+* Within comments you can quickly link to issues and pull requests for example #26 and GH-26 -> hhttps://github.com/USER/repo/file/issues/26.
+
+### Text Formatting Toolbar
+Every comment field on GitHub contains a text formatting toolbar, which allows you to format your text without learning GitHub-flavoured Markdown syntax.
+
+#### Slash Commands
+Within the comments only on GitHub, provides convenience features such as formatting markdown. Slash Commands is an bate feature.
 
 ### Core Commands
 | Commands | Description |
