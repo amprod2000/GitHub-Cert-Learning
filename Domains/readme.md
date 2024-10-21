@@ -3,7 +3,6 @@
 <table>
     <tr>
         <th colspan="2" style="text-align: center;">GitHub Entities</th>
-        <td></td>
     </tr>
     <tr>
         <td>
@@ -22,8 +21,6 @@
                     </a>
                 </li>
             </ul>
-        </td>
-        <td>
         </td>
     </tr>
     <tr>
