@@ -2,25 +2,82 @@
 
 ## GitHub Entities
 ### Describe the different GitHub accounts (personal, organization, enterprise)
-* [YouTube Video - Types of GitHub Accounts](https://www.youtube.com/watch?v=UAK7iE6W_30)
-* [GitHub Stored Video - Types of GitHub Accounts](Videos/Github%20—%20Types%20of%20GitHub%20Accounts%20[UAK7iE6W_30].mkv)
-### <mark style="background-color: #CC99FF;">Personal Accounts</mark>
+#### <mark style="background-color: #CC99FF;">Personal Accounts</mark>
 * **Individual accounts** with a username and profile.
 * Can own **repositories** and projects; actions are attributed to the individual account.
 * Can use either **GitHub Free** or **GitHub Pro**.
 * URLs for repositories look like: `https://github.com/username/repo-name`
-### <mark style="background-color: #CC99FF;">Organization Accounts</mark>
+#### <mark style="background-color: #CC99FF;">Organization Accounts</mark>
 * **Shared accounts** for multiple collaborators on projects.
 * Can manage resources through individual **personal accounts**.
 * Provides **different roles** with Principles of Least Privilege (PoLP)
 * URLs for repositories look like: `https://github.com/organization-name/repo-name`
-### <mark style="background-color: #CC99FF;">Enterprise Accounts</mark>
+#### <mark style="background-color: #CC99FF;">Enterprise Accounts</mark>
 * Part of **GitHub Enterprise Cloud (GHEC)** & **GitHub Enterprise Server (GHES)**
 * Allows for **central management** of multiple organization
 * Ideal for **large setups** requiring centralized policy and billing management.
+### Describe GitHub’s products for personal accounts (free, pro)
+<table>
+    <tr>
+        <th>GitHub Free</th>
+        <th>GitHub Pro</th>
+    </rd>
+    <tr>
+        <td>Community Support</td>
+        <td>Email Support</td>
+    </tr>
+    <tr>
+        <td>2,000 mins GitHub Actions per month</td>
+        <td>3,000 mins GitHub Actions per month</td>
+    </tr>
+    <tr>
+        <td>500 MB GitHub Packages storage</td>
+        <td>2 GB GitHub Packages storage</td>
+    </tr>
+    <tr>
+        <td>120 Hrs GitHub Codespaces core per month</td>
+        <td>180 Hrs GitHub Codespaces core per month</td>
+    </tr>
+    <tr>
+        <td>15 GB GitHub Codespaces storage per month</td>
+        <td>20 GB GitHub Codespaces storage per month</td>
+    </tr>
+    <tr style="text-align: center;">
+        <td colspan="2">Dependabot alerts</td>
+    </tr>
+    <tr style="text-align: center;">
+        <td colspan="2">Deployment Protection Rules for public repositories</td>
+    </tr>
+    <tr style="text-align: center;">
+        <td colspan="2">Two-factor Authentication enforcement</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Wikis and Repository Insights Graphs</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            Advanced Tools for private repositories:
+            <ul>
+                <li>Required Pull Request Reviewers</li>
+                <li>Multiple Pull Request Reviewers</li>
+                <li>Protected Branches</li>
+                <li>Code Owners</li>
+                <li>Auto-linked References</li>
+                <li>GitHub Pages</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Deployment Protection Rules for public repositories for GitHub Actions features.
+        </td>
+        <td></td>
+    </tr>
+</table>
+
 ### Describe the different deployment options for GitHub Enterprise
-* [YouTube Video - GitHub Enterprises Deployment Options](https://www.youtube.com/watch?v=LQe1OD6UkiY&t=3s)
-* [GitHub Stored Video - GitHub Enterprises Deployment Options](Videos/Github%20—%20GitHub%20Enterprises%20Deployment%20Options%20[LQe1OD6UkiY].mkv)
 <table>
     <tr>
         <th colspan=2 style="text-align: center;">GitHub Enterprise Deployment Options</th>
