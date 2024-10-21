@@ -17,7 +17,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Videos/Github%20—%20Types%20of%20GitHub%20Accounts%20[UAK7iE6W_30].mkv">
+                    <a href="/Domains/Domain-1-Introduction-to-Git-and-GitHub/Videos/Github-Types-of-GitHub-Accounts-UAK7iE6W_30.mkv">
                     GitHub Stored Video - Types of GitHub Accounts
                     </a>
                 </li>
@@ -36,7 +36,7 @@
                     <a href="https://www.youtube.com/watch?v=bCWujeixSK0">YouTube Video - GitHub Free vs GitHub Pro</a>
                 </li>
                 <li>
-                    <a href="Videos/Github%20—%20GitHub%20Free%20vs%20GitHub%20Pro%20[bCWujeixSK0].mkv">GitHub Stored Video - GitHub Free vs GitHub Pro</a>
+                    <a href="/Domains/Domain-1-Introduction-to-Git-and-GitHub/Videos/Github-GitHub-Free-vs-GitHub-Pro-bCWujeixSK0.mkv">GitHub Stored Video - GitHub Free vs GitHub Pro</a>
                 </li>
             </ul>
         </td>
@@ -53,7 +53,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Videos/Github%20—%20GitHub%20Enterprises%20Deployment%20Options%20[LQe1OD6UkiY].mkv">
+                    <a href="/Domains/Domain-1-Introduction-to-Git-and-GitHub/Videos/Github-GitHub-Enterprises-Deployment-Options-LQe1OD6UkiY.mkv">
                     GitHub Stored Video - GitHub Enterprises Deployment Options
                     </a>
                 </li>
