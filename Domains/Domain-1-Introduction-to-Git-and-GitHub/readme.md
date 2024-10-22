@@ -77,6 +77,73 @@
     </tr>
 </table>
 
+### Describe GitHub’s products for organization accounts (free for organizations, teams)
+
+GitHub offers three types of organization plans: Free, Teams, and Enterprise.
+
+<table>
+    <tr>
+        <th>Free Plan</th>
+        <th>Teams Plan</th>
+    </tr>
+    <tr>
+        <td>2,000 Mins GitHub Actions per month</td>
+        <td>3,000 Mins GitHub Actions per month</td>
+    </tr>
+    <tr>
+        <td>500 MB GitHub Packages storage</td>
+        <td>2 GB GitHub Packages storage</td>
+    </tr>
+    <tr>
+        <td>Team access controls for managing groups</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>GitHub Support via email</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Advanced tools and insights in private repositories</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Required and multiple pull request reviewers</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Draft pull requests</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Team pull request reviewers</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Protected branches</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Code owners</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Scheduled reminders</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>GitHub Pages and Wikis</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>Repository insights graphs</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>The option to enable or disable GitHub Codespaces</td>
+    </tr>
+</table>
+
 ### Describe the different deployment options for GitHub Enterprise
 <table>
     <tr>
@@ -136,3 +203,5 @@
         <td><b>User Account Management</b>: Provision and manage user accounts using Enterprise Managed users</td>
     </tr>
 </table>
+
+### Describe the features in the user profile (metadata, achievements, profile readme, repositories, pinned repositories, stars, etc.)

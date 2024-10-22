@@ -40,6 +40,25 @@
     </tr>
     <tr>
         <td>
+            Describe GitHub’s products for organization accounts (free for organizations, teams)
+        </td>
+        <td>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=gUUNtEB2YQg">
+                        YouTube Video - GitHub Organizations Plans
+                    </a>
+                </li>
+                <li>
+                    <a href="/Domains/Domain-1-Introduction-to-Git-and-GitHub/Videos/Github-GitHub-Organizations-Plans-gUUNtEB2YQg.mkv">
+                        GitHub Stored Video - GitHub Organizations Plans
+                    </a>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
             Describe the different deployment options for GitHub Enterprise
         </td>
         <td>
