@@ -76,6 +76,77 @@
             </ul>
         </td>
     </tr>
+    <tr>
+        <th colspan="2" style="text-align: center;">GitHub Markdown</th>
+    </tr>
+    <tr>
+        <td>Identify the text formatting toolbar on issue and pull request comments</td>
+        <td>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=IGCFsIfisyU">
+                    YouTube Video - Text Formatting Toolbar
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    GitHub Stored Video - Text Formatting Toolbar
+                    </a>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Describe Markdown</td>
+        <td>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=UIJ7ytN_y98">
+                    YouTube Video - Markdown
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    GitHub Stored Video - Markdown
+                    </a>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Identify the basic formatting syntax (headings, links, task lists, comments, etc.)</td>
+        <td>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=brj5vpJwx0s">
+                    YouTube Video - Markdown Basic Syntax
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    GitHub Stored Video - Markdown Basic Syntax
+                    </a>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Explain where to find and use slash commands</td>
+        <td>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=xBZmIxX9E8A">
+                    YouTube Video - Slash Commands
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                    GitHub Stored Video - Slash Commands
+                    </a>
+                </li>
+            </ul>
+        </td>
+    </tr>
 </table>
 
 ## Domain 2: Working with GitHub Repositories
