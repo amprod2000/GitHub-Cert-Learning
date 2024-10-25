@@ -207,3 +207,5 @@ GitHub offers three types of organization plans: Free, Teams, and Enterprise.
 ### Describe the features in the user profile (metadata, achievements, profile readme, repositories, pinned repositories, stars, etc.)
 
 ## GitHub Markdown
+
+### Explain where to find and use slash commands
