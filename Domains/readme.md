@@ -156,3 +156,72 @@
 ## Domain 4: Modern Development
 
 ## Domain 5: Project Management
+<table>
+    <tr>
+        <th colspan="2" style="text-align: center;">Describe the benefits of the open source community</th>
+    </tr>
+    <tr>
+        <td>Describe open source</td>
+        <td>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=iiMod9b3Y3Y">
+                    YouTube Video - What is Open Source
+                    </a>
+                </li>
+                <li>
+                    <a href="/Domains/Domain-7-Benefits-of-the-GitHub-Community/Videos/What-is-Open-Source-iiMod9b3Y3Y.mkv">
+                    GitHub Stored Video - What is Open Source
+                    </a>
+                </li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Describe GitHub Sponsors</td>
+        <td>.</td>
+    </tr>
+    <tr>
+        <td>Describe how GitHub advances open source projects</td>
+        <td>.</td>
+    </tr>
+    <tr>
+        <td>Identify how to follow people (receive notifications, discover projects in their community)</td>
+        <td>.</td>
+    </tr>
+    <tr>
+        <td>Explain how to follow organizations (receive notifications about their activity)</td>
+        <td>.</td>
+    </tr>
+    <tr>
+        <td>Describe the GitHub Marketplace and its purpose</td>
+        <td>.</td>
+    </tr>
+    <tr>
+        <th colspan="2" style="text-align: center;">Describe how to apply the benefits of open source</th>
+    </tr>
+    <tr>
+        <td>Describe InnerSource</td>
+        <td>.</td>
+    </tr>
+    <tr>
+        <td>Identify the differences between InnerSource and open source</td>
+        <td>.</td>
+    </tr>
+    <tr>
+        <td>Describe forking</td>
+        <td>.</td>
+    </tr>
+    <tr>
+        <td>Describe the components of a discoverable repository</td>
+        <td>.</td>
+    </tr>
+    <tr>
+        <td>Describe when to use issue templates</td>
+        <td>.</td>
+    </tr>
+    <tr>
+        <td>Describe when to use pull request templates</td>
+        <td>.</td>
+    </tr>
+</table>
